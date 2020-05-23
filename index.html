@@ -63,6 +63,41 @@
     </nav><!-- #header-nav -->
   </header>
   <!--I am added -->
+  <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+  <a href="#" onclick="$dc.loadMenuItems('{{short_name}}');">
+    <div class="category-tile">
+      <img width="200" height="200" src="images/menu/{{short_name}}/{{short_name}}.jpg" alt="{{name}}">
+      <span>{{name}}</span>
+    </div>
+  </a>
+</div>
+  
+  <h2 id="menu-categories-title" class="text-center">Menu Categories</h2>
+<div class="text-center">
+  Substituting white rice with brown rice or fried rice after 3:00pm will be $1.50 for a pint and $2.50 for a quart.
+</div>
+  
+  <h2 id="menu-categories-title" class="text-center">{{name}} Menu</h2>
+<div class="text-center">{{special_instructions}}</div>
+  
+  <div class="menu-item-tile col-md-6">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="menu-item-photo">
+        <div>{{short_name}}</div>
+        <img class="img-responsive" width="250" height="150" src="images/menu/{{catShortName}}/{{short_name}}.jpg" alt="Item">
+      </div>
+      <div class="menu-item-price">{{price_small}}<span> {{small_portion_name}}</span> {{price_large}} <span>{{large_portion_name}}</span></div>
+    </div>
+    <div class="menu-item-description col-sm-7">
+      <h3 class="menu-item-title">{{name}}</h3>
+      <p class="menu-item-details">{{description}}</p>
+    </div>
+  </div>
+  <hr class="visible-xs">
+</div>
+  
+  
   <div class="jumbotron">
       <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
     </div>
@@ -85,22 +120,8 @@
         </a>
       </div>
     </div><!-- End of #home-tiles -->
-  <div class="menu-item-tile col-md-6">
-  <div class="row">
-    <div class="col-sm-5">
-      <div class="menu-item-photo">
-        <div>{{short_name}}</div>
-        <img class="img-responsive" width="250" height="150" src="images/menu/{{catShortName}}/{{short_name}}.jpg" alt="Item">
-      </div>
-      <div class="menu-item-price">{{price_small}}<span> {{small_portion_name}}</span> {{price_large}} <span>{{large_portion_name}}</span></div>
-    </div>
-    <div class="menu-item-description col-sm-7">
-      <h3 class="menu-item-title">{{name}}</h3>
-      <p class="menu-item-details">{{description}}</p>
-    </div>
-  </div>
-  <hr class="visible-xs">
-</div>
+  
+ 
   <!i am last adding -->
 
   <div id="call-btn" class="visible-xs">
